@@ -1,0 +1,17 @@
+syntax="proto3";
+
+option java_package="io.github.venkat1701";
+option java_outer_classname="GreetingServiceProto";
+
+service GreetingService {
+  rpc greet(GreetingRequest) returns (GreetingResponse);
+}
+
+message GreetingRequest {
+  string name = 1;
+}
+
+message GreetingResponse {
+  string name=1;
+}
+
